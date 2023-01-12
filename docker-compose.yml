@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  users:
+    platform: linux/x86_64
+    image: mysql:debian
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./_data/users:/var/lib/mysql
+    environment:
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: rpassword
+      MYSQL_DATABASE: users
+
+  posts:
+    platform: linux/x86_64
+    image: mysql:debian
+    ports:
+      - '3307:3306'
+    volumes:
+      - ./_data/posts:/var/lib/mysql
+    environment:
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: rpassword
+      MYSQL_DATABASE: posts

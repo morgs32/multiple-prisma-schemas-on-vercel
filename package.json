@@ -1,0 +1,32 @@
+{
+  "name": "multiple-prisma-schemas-on-vercel",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm -r run dev",
+    "generate": "pnpm -r run generate && pnpm -r run mv-engine",
+    "push": "pnpm -r exec prisma db push",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morgs32/multiple-prisma-schemas-on-vercel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morgs32/multiple-prisma-schemas-on-vercel/issues"
+  },
+  "homepage": "https://github.com/morgs32/multiple-prisma-schemas-on-vercel#readme",
+  "devDependencies": {
+    "@morgs32/eslint-config": "^1.0.2",
+    "@types/node": "^18.11.18",
+    "eslint": "^8.31.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.10.1",
+    "prisma": "^4.10.1"
+  }
+}

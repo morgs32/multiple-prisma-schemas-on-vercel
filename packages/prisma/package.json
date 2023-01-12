@@ -1,0 +1,13 @@
+{
+  "name": "myprisma",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "mv-engine": "zx mv-engine.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "zx": "^7.2.3"
+  }
+}
